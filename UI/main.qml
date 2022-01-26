@@ -3,11 +3,11 @@ import QtQuick.Controls.Basic
 ApplicationWindow {
     visible: true
     width: 360
-    height: 600
-    x: screen.desktopAvailableWidth - width - 12
-    y: screen.desktopAvailableHeight - height - 48
+    height: 700
+    // x: screen.desktopAvailableWidth - width - 12
+    // y: screen.desktopAvailableHeight - height - 48
     title: "HelloApp"
-    flags: Qt.FramelessWindowHint | Qt.Window
+    // flags: Qt.FramelessWindowHint | Qt.Window
     property string currTime: "00:00:00"
     property QtObject backend
     Rectangle {

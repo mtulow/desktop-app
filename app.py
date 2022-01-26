@@ -9,6 +9,7 @@ from PyQt6.QtQml import QQmlApplicationEngine
 from PyQt6.QtQuick import QQuickWindow
 from PyQt6.QtCore import QObject, pyqtSignal
 
+# tutorial: https://medium.com/analytics-vidhya/how-to-build-your-first-desktop-application-in-python-7568c7d74311
 
 class Backend(QObject):
     updated = pyqtSignal(str, arguments=['updater'])
@@ -30,6 +31,8 @@ class Backend(QObject):
 
 
 if __name__ == "__main__":
+    folder = os.path.join(os.environ['HOME'], 'Desktop', '03-applications', 'desktop_app')
+    os.chdir(folder)
     qml_file = './UI/main.qml'
 
     QQuickWindow.setSceneGraphBackend('software')
